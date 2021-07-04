@@ -1,0 +1,29 @@
+Warning and errors in Jupyter notebooks
+
+module 3, files ML0101ES-Clas-SVM-cancer-py-v1.ipynb, ML0101ES-Clas-Decision-Trees-drug-py-v1.ipynb (jaccard_score only)
+#from sklearn.cross_validation import train_test_split
+use
+from sklearn.model_selection import train_test_split
+instead
+
+#from sklearn.metrics import jaccard_similarity_score
+use
+from sklearn.metrics import jaccard_score
+instead
+===================================================================
+module 4, files E:\EDU\MLearning\IBM\apps\code\ML0101ES-Clus-Hierarchical-Cars-py-v1.ipynb, ML0101ES-Clus-K-Means-Customer-Seg-py-v1.ipynb
+#from sklearn.datasets.samples_generator import make_blobs 
+warning! use
+from sklearn.datasets import make_blobs
+instead
+====================================================================
+modul 4, file ML0101ES-Clus-Hierarchical-Cars-py-v1.ipynb
+Z = hierarchy.linkage(dist_matrix, 'complete')
+<ipython-input-12-b9b2ef86aa07>:2: ClusterWarning: scipy.cluster: The symmetric non-negative hollow observation matrix looks suspiciously like an uncondensed distance matrix
+  Z = hierarchy.linkage(dist_matrix, 'complete')
+
+Please, this warning must be explained
+===================================================================
+module 4, file Clus-DBSCN-weather-py-v1.ipynb
+from mpl_toolkits.basemap import Basemap 
+Basemap is deprecated, you must use Cartopy instead. pdf object is not created and code below doesn't run
